@@ -11,6 +11,7 @@ public class UnaryOperatorExample {
          * Se utiliza para realizar operaciones sobre el argumento y devolver el mismo tipo de argumento.
          * apply(T t) -> Realiza la operación sobre el argumento y devuelve el mismo tipo de argumento.
          */
+
         UnaryOperator<String> unaryOperator = (s) -> s.toUpperCase(); // Recibe un String y devuelve un String
         System.out.println(unaryOperator.apply("hello world"));
 

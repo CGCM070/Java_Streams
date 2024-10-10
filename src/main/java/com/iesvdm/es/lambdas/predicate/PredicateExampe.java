@@ -17,5 +17,7 @@ public class PredicateExampe {
         Predicate<String> predicate = (s) -> s.length() > 5; // Recibe un String y devuelve un boolean
         System.out.println(predicate.test("Hello World"));
 
+
+
     }
 }
