@@ -1,4 +1,4 @@
-package com.iesvdm.lambdas.biconsumer;
+package com.iesvdm.es.lambdas.biconsumer;
 
 import java.util.function.BiConsumer;
 

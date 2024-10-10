@@ -1,4 +1,4 @@
-package com.iesvdm.lambdas.function;
+package com.iesvdm.es.lambdas.function;
 
 import java.util.function.Function;
 

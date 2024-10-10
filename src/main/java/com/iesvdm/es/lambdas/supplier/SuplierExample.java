@@ -1,4 +1,4 @@
-package com.iesvdm.lambdas.supplier;
+package com.iesvdm.es.lambdas.supplier;
 
 import java.util.function.Supplier;
 

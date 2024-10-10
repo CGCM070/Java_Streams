@@ -1,4 +1,4 @@
-package com.iesvdm.lambdas.consumer;
+package com.iesvdm.es.lambdas.consumer;
 
 import java.util.function.Consumer;
 

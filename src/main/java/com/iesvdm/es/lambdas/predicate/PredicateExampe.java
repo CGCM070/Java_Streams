@@ -1,4 +1,4 @@
-package com.iesvdm.lambdas.predicate;
+package com.iesvdm.es.lambdas.predicate;
 
 import java.util.function.Predicate;
 

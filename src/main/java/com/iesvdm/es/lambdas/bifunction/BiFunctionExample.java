@@ -1,4 +1,4 @@
-package com.iesvdm.lambdas.bifunction;
+package com.iesvdm.es.lambdas.bifunction;
 
 import java.util.function.BiFunction;
 
