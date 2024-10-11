@@ -15,7 +15,8 @@ public class BinaryOperatorExample {
          */
 
         BinaryOperator<Integer> binaryOperator = (a, b) -> a + b; // Recibe dos Integer y devuelve un Integer
-        System.out.println(binaryOperator.apply(5, 5));
+        Integer result = binaryOperator.apply(5, 5);
+        System.out.println(result);
 
     }
 }
