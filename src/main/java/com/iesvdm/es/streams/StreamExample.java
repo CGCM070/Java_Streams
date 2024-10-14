@@ -32,5 +32,7 @@ public class StreamExample {
         nombres.stream().map(String::toUpperCase).forEach(System.out::println);
 
 
+
+
     }
 }
