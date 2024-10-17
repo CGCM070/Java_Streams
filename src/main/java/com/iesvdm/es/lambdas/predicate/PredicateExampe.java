@@ -30,7 +30,7 @@ public class PredicateExampe {
         Predicate<String> combinedPredicate = longMayorQue5.and(contieneA);
 
         List<String> filtrados = names.stream()
-                .filter(combinedPredicate)
+                .filter(n -> n.length() > 5 && n.contains("a"))
                 .toList();
         System.out.println(filtrados);
 
