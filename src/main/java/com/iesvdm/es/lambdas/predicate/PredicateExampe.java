@@ -1,5 +1,7 @@
 package com.iesvdm.es.lambdas.predicate;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.Predicate;
 
 public class PredicateExampe {
@@ -17,6 +19,20 @@ public class PredicateExampe {
         Predicate<String> predicate = (s) -> s.length() > 5; // Recibe un String y devuelve un boolean
         System.out.println(predicate.test("Hello World"));
 
+
+        // Ejemplo de Predicate combinado
+        List<String> names = Arrays.asList("Hello", "World", "Java", "Programming", "Stream", "Lambda");
+
+        Predicate<String> longMayorQue5 = s -> s.length() > 5;
+        Predicate<String> contieneA = s -> s.contains("a");
+
+        // Combinamos ambos Predicates usando el método and
+        Predicate<String> combinedPredicate = longMayorQue5.and(contieneA);
+
+        List<String> filtrados = names.stream()
+                .filter(combinedPredicate)
+                .toList();
+        System.out.println(filtrados);
 
 
     }
