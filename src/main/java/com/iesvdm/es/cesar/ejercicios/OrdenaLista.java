@@ -1,5 +1,7 @@
 package com.iesvdm.es.cesar.ejercicios;
 
+import com.iesvdm.es.cesar.ejercicios.persona.Persona;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -57,6 +59,19 @@ public class OrdenaLista {
          * ordena por edad y convierte la lista resultante en un mapa
          * donde la clave sea el nombre y el valor sea la edad.
          * */
+
+        List<Persona> personas = Arrays
+                .asList(new Persona("Ana", 20),
+                        new Persona("Juan", 15),
+                        new Persona("Luis", 25),
+                        new Persona("Maria", 30),
+                        new Persona("Pedro", 10));
+
+
+        Map<String, Integer> personasFiltradas = personas.stream()
+                .filter(p -> p.getEdad() > 18)
+                .collect(Collectors.toMap(Persona::getNombre, Persona::getEdad));
+        System.out.println(personasFiltradas);
 
     }
 }
